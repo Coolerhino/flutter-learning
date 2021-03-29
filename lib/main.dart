@@ -25,41 +25,30 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             backgroundColor: Colors.teal,
             body: SafeArea(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: double.infinity,
-                    width: 100.0,
-                    color: Colors.red,
-                    child: Text('Container 1'),
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                  CircleAvatar(
+                    radius: 200,
+                    backgroundColor: Colors.red,
+                    backgroundImage: AssetImage('images/viking-avatar.jpg'),
                   ),
-                  Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          height: 100,
-                          width: 100.0,
-                          color: Colors.yellow,
-                          child: Text('Container 3'),
-                        ),
-                        Container(
-                          height: 100,
-                          width: 100.0,
-                          color: Colors.green,
-                          child: Text('Container 4'),
-                        ),
-                      ]),
-                  Container(
-                    height: double.infinity,
-                    width: 100.0,
-                    color: Colors.blue,
-                    child: Text('Container 1'),
-                  ),
-                ],
-              ),
-            )));
+                  Text('Angela merqel',
+                      style: TextStyle(
+                        fontFamily: 'Pacifico',
+                        color: Colors.white,
+                        fontSize: 40.0,
+                        fontWeight: FontWeight.bold,
+                      )),
+                  Text('SOFTWARE ENGINEER',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          color: Colors.teal.shade100,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0))
+                ]))));
   }
 }
 
