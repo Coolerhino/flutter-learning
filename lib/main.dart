@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                   CircleAvatar(
-                    radius: 200,
+                    radius: 70,
                     backgroundColor: Colors.red,
                     backgroundImage: AssetImage('images/viking-avatar.jpg'),
                   ),
@@ -47,7 +47,53 @@ class MyApp extends StatelessWidget {
                           color: Colors.teal.shade100,
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold,
-                          letterSpacing: 2.0))
+                          letterSpacing: 2.0)),
+                  Container(
+                      padding: EdgeInsets.all(10.0),
+                      color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 25.0),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.phone,
+                            color: Colors.teal,
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          Text(
+                            '+48 375 394 753',
+                            style: TextStyle(
+                                color: Colors.teal.shade900,
+                                fontFamily: 'Source Sans Pro',
+                                fontSize: 20.0),
+                          )
+                        ],
+                      )),
+                  Container(
+                      padding: EdgeInsets.all(10.0),
+                      color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 25.0),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.email,
+                            color: Colors.teal,
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          Text(
+                            'baltazar.gąbka@tytus.com',
+                            style: TextStyle(
+                                color: Colors.teal.shade900,
+                                fontFamily: 'Source Sans Pro',
+                                fontSize: 20.0),
+                          )
+                        ],
+                      )),
                 ]))));
   }
 }
